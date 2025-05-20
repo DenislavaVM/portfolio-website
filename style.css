@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
     margin: 0;
@@ -269,6 +269,33 @@ section {
     border-radius: 2rem;
 }
 
+.cert-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.cert-grid ul {
+    flex: 1;
+    min-width: 250px;
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.cert-grid ul li {
+    margin-bottom: 1.2rem;
+    line-height: 1.4;
+}
+
+.cert-grid ul li a {
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-top: 0.3rem;
+    color: #0073e6;
+}
+
 .arrow {
     position: absolute;
     right: -5rem;
@@ -285,9 +312,40 @@ section {
     text-align: center;
 }
 
+.details-container ul li {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.details-container ul li a {
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-top: 0.3rem;
+    color: #0073e6;
+}
+
 .section-container {
+    display: flex;
     gap: 4rem;
-    height: 80%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.about-layout {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-layout .section__pic-container {
+    flex: 1;
+    max-width: 350px;
+}
+
+.about-layout .about-details-container {
+    flex: 2;
 }
 
 .section__pic-container {

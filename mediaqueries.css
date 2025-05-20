@@ -37,9 +37,10 @@
         display: none;
     }
 
-    section,
     .section-container {
-        height: fit-content;
+        display: block;
+        height: auto;
+        margin-bottom: 3rem;
     }
 
     section {
@@ -123,5 +124,20 @@
 
     .text-container {
         text-align: justify;
+    }
+
+    .details-container .icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-layout .section__pic-container {
+        margin-bottom: 2rem;
     }
 }
