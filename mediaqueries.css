@@ -135,10 +135,41 @@
     .about-layout {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .about-layout .text-container {
+        max-width: 90%;
+        margin-top: 1rem;
+    }
+
+    .text-container {
+        max-width: 90%;
+        padding: 0 1rem;
+        text-align: left;
+        margin-top: 0.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section__text__p1 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     .about-layout .section__pic-container {
-        margin-bottom: 2rem;
+        width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about-pic {
+        width: 100%;
+        height: auto;
+        border-radius: 1.5rem;
     }
 
     #projects .about-container {

@@ -269,6 +269,14 @@ section {
     display: flex;
 }
 
+.cert-list {
+    text-align: left;
+    font-size: 0.95rem;
+    padding: 0 1rem;
+    list-style: disc;
+    margin-left: 1rem;
+}
+
 .about-pic {
     border-radius: 2rem;
 }
@@ -338,14 +346,35 @@ section {
 
 .about-layout {
     display: flex;
-    gap: 3rem;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 3rem;
 }
 
 .about-layout .section__pic-container {
     flex: 1;
     max-width: 350px;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 2rem 1rem 0;
+}
+
+.text-container {
+    flex: 2;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 700px;
+}
+
+.about-layout .text-container {
+    flex: 2;
+    max-width: 700px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
 }
 
 .about-layout .about-details-container {
