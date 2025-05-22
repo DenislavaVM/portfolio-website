@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Denislava Milanova</div>
+    <nav id="desktop-nav" role="navigation" aria-label="Main navigation">
+        <h1 class="logo">Denislava Milanova</h1>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -63,7 +63,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" role="region" aria-labelledby="about-title">
         <p class="section__text__p1">Get to know more</p>
         <h1 class="title">About me</h1>
         <div class="section-container about-layout">
@@ -134,7 +134,7 @@
             loading="lazy">
     </section>
 
-    <section id="experience">
+    <section id="experience" aria-labelledby="experience-title">
         <p class="section__text__p1">Explore my</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
@@ -243,7 +243,7 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
 
-    <section id="projects">
+    <section id="projects" aria-labelledby="projects-title">
         <p class="section__text__p1">Browse my projects</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
@@ -341,7 +341,7 @@
             loading="lazy">
     </section>
 
-    <section id="contact">
+    <section id="contact" aria-labelledby="contact-title">
         <p class="section__text__p1">Get in touch</p>
         <h1 class="title">Contact me</h1>
         <div class="contact-info-upper-container">
