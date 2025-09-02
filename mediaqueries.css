@@ -1,16 +1,7 @@
 @media screen and (max-width: 1400px) {
     #profile {
-        height: 83vh;
+        height: auto;
         margin-bottom: 6rem;
-    }
-
-    .about-containers {
-        flex-wrap: wrap;
-    }
-
-    #contact,
-    #projects {
-        height: fit-content;
     }
 }
 
@@ -23,121 +14,72 @@
         display: flex;
     }
 
-    #experience,
-    .experience-details-container {
-        margin-top: 2rem;
-    }
-
     #profile,
     .section-container {
-        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__pic-container {
+        width: 275px;
+        margin-bottom: 2rem;
+    }
+
+    .profile-text,
+    .text-container,
+    .details-container {
+        text-align: center;
+    }
+
+    .details-container {
+        max-width: 90%;
+        margin: 1rem auto;
+        padding: 1.5rem;
     }
 
     .arrow {
         display: none;
     }
+}
 
-    .section-container {
-        display: block;
-        height: auto;
-        margin-bottom: 3rem;
+@media screen and (max-width: 768px) {
+
+    .about-layout,
+    .about-containers,
+    #projects .about-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    section {
-        margin: 0 5%;
+    .text-container {
+        max-width: 90%;
+        padding: 0 1rem;
+        text-align: center;
+        margin-top: 0.5rem;
     }
 
-    .section__pic-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
-
-    .about-containers {
-        margin-top: 0;
+    article {
+        max-width: 300px;
+        justify-content: center;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 600px) {
 
-    #contact {
-        padding: 3rem 1rem;
-    }
-
     #contact,
     footer {
-        height: 40vh;
+        height: auto;
     }
 
     .contact-info-upper-container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-    }
-
-    .email-icon {
-        height: 2rem;
-    }
-
-    .contact-info-upper-container p {
-        font-size: 1rem;
-    }
-
-    #profile {
-        height: 83vh;
-        margin-bottom: 0;
-    }
-
-    article {
-        font-size: 1rem;
-    }
-
-    .article-container h3 {
-        font-size: 1rem;
-    }
-
-    .article-container p {
-        font-size: 0.9rem;
-    }
-
-    footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
-
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-        flex-wrap: wrap;
-    }
-
-    .contact-info-container {
-        margin: 0;
-    }
-
-    .contact-info-container p,
-    .nav-links li a {
-        font-size: 1rem;
-    }
-
-    .experience-sub-title {
-        font-size: 1.25rem;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
     }
 
     .section__pic-container {
         width: auto;
         height: 46vw;
-        justify-content: center;
     }
 
     .section__text__p2 {
@@ -148,111 +90,13 @@
         font-size: 2rem;
     }
 
-    .text-container {
-        text-align: justify;
-    }
-
-    .details-container .icon {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .about-layout {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        text-align: center;
-    }
-
-    .about-layout .text-container {
-        max-width: 90%;
-        margin-top: 1rem;
-    }
-
-    .experience-details-container .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text-container {
-        max-width: 90%;
-        padding: 0 1rem;
-        text-align: left;
-        margin-top: 0.5rem;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-
-    .section__text__p1 {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .about-layout .section__pic-container {
-        width: 250px;
-        height: auto;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    .article-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    article {
-        width: 100%;
-        max-width: 300px;
-        justify-content: flex-start;
-    }
-
-    .article-container h3 {
-        font-size: 1.1rem;
-    }
-
+    article,
+    .article-container h3,
     .article-container p {
         font-size: 0.9rem;
     }
 
-    .about-pic {
-        width: 100%;
-        height: auto;
-        border-radius: 1.5rem;
-    }
-
-    .about-containers {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .details-container {
-        width: 100%;
-        max-width: 500px;
-        margin: 1rem auto;
-    }
-
-    #projects .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .details-container.color-container {
-        max-width: 90%;
-        padding: 1.5rem;
-    }
-
-    .project-title {
-        font-size: 1.5rem;
-    }
-
-    .details-container p {
-        font-size: 1rem;
-        text-align: center;
-        margin-bottom: 1rem;
+    .details-container .icon {
+        display: none;
     }
 }
